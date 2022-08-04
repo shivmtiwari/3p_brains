@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: #ffffff;
+}
+.wrapper{
+  max-width: 1150px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wrapper .table{
+  background: #fff;
+  width: calc(33% - 10px);
+  padding: 30px 30px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+
+
+.ribbon {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    overflow: hidden;
+  }
+  
+  .ribbon::before,
+  .ribbon::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #313131;
+    z-index: -1;
+  }
+  
+  .ribbon::after {
+    bottom: 0;
+    right: 0;
+  }
+  
+  .ribbon span {
+    position: absolute;
+    width: 220px;
+    height: 40px;
+    /* background-color: #da4747; */
+    background: #ffd861;
+  
+    transform: rotate(45deg);
+    top: 40px;
+    left: -22px;
+    text-align: center;
+    line-height: 40px; /* should be same as heigh */
+    font-family: verdana;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+.table .price-section{
+    display: flex;
+    justify-content: center;
+  }
+  .table .price-area{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 2px;
+  }
+  .price-area .inner-area{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    line-height: 117px;
+    /* position: relative; */
+  }
+
+  .price-area .inner-area img{
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   padding: 2px;
+  }
+
+  .price-area .recommened img{
+    border: 2.5px solid #ffd861 ;
+   }
+
+   .price-area .normal img{
+    border: 2.5px solid #2db94d ;
+   }
+
+  .table .package-name{
+    width: 100%;
+    height: 2px;
+    margin: 30px 0 50px 0;
+    position: relative;
+  }
+
+  .table .package-name h3{
+    text-align: center !important;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .table .package-name h5{
+    text-align: center !important;
+    font-size: 14px;
+    font-weight: 500;
+    color: #313131;
+  }
+
+
+  .table .features li{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .features li .list-name{
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .features li .icon{
+    font-size: 15px;
+  }
+  .features li .icon.check{
+    color: #2db94d;
+  }
+  .features li .icon.cross{
+    color: #cd3241;
+  }
+  .table .btn{
+    width: 100%;
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+  }
+  .table .btn button{
+    width: 70%;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .table .btn button:hover{
+    border-radius: 5px;
+  }
+  /* .basic .features li::selection{
+    background: #ffd861;
+  }
+  .basic ::selection,
+  .basic .price-area,
+  .basic .inner-area{
+    background: #ffd861;
+  } */
+  .basic .btn button{
+    border: 2px solid #ffd861;
+    background: #fff;
+    color: #ffd861;
+  }
+  .basic .btn button:hover{
+    background: #ffd861;
+    color: #fff;
+  }
+
+
+
+  .ultimate .btn button{
+    border: 2px solid #43ef8b;
+    color: #43ef8b;
+    background: #fff;
+  }
+  .ultimate .btn button:hover{
+    background: #43ef8b;
+    color: #fff;
+  }
+
+  @media (max-width: 1020px) {
+    .wrapper .table{
+      width: calc(50% - 20px);
+      margin-bottom: 40px;
+    }
+  }
+  @media (max-width: 698px) {
+    .wrapper .table{
+      width: 100%;
+    }
+  }
+
+
+

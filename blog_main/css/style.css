@@ -1,0 +1,414 @@
+/* ===== Google Font Import - Poppins ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  transition: 0.2s linear;
+}
+
+:root {
+  --body-color: #dde6ff;
+  --nav-color: #fff;
+  --text-color: rgb(0, 0, 0);
+  --hover-color: rgb(79, 77, 214);
+  --span-color: rgb(98, 0, 255);
+  --border-coloe: #d4d4e1;
+  --icon-bg: rgb(75, 75, 218);
+  --icon-color: #fff;
+  --body-light: #fff;
+  --static-color: rgb(79, 77, 214);
+}
+
+body.dark {
+  --body-color: #18191a;
+  --nav-color: #242526;
+  --text-color: #fff;
+  --hover-color: rgb(0, 255, 55);
+  --static-color: rgb(0, 255, 55);
+  --border-coloe: #fff;
+  --icon-color: rgb(0, 0, 0);
+  --body-light: rgb(0, 0, 0);
+}
+
+/* ========== navbar starts here ========== */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  background-color: var(--nav-color);
+  z-index: 100;
+}
+
+nav .nav-bar {
+  position: relative;
+  height: 100%;
+  max-width: 1150px;
+  width: 100%;
+  background-color: var(--nav-color);
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav-bar .sidebarOpen {
+  color: var(--text-color);
+  font-size: 25px;
+  padding: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+nav .nav-bar a span {
+  color: var(--static-color);
+}
+
+nav .nav-bar a {
+  font-size: 25px;
+  font-weight: 900;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.menu .logo-toggle {
+  display: none;
+}
+.nav-bar i {
+  margin-left: -20px;
+}
+
+.nav-bar .nav-links {
+  display: flex;
+  align-items: center;
+  padding-left: 290px;
+}
+
+.nav-bar .nav-links li {
+  margin: 0 5px;
+  list-style: none;
+}
+
+
+.nav-links li a{
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-decoration: none;
+    /* padding: 10px; */
+    margin: 10px;
+  }
+  
+  .nav-links li a:hover {
+    color: var(--hover-color);
+    border-bottom: 2px solid var(--hover-color);
+    padding-bottom: 3px ; 
+    animation:  1s ease-in;
+  
+    
+  }
+  
+  .nav-bar .darkLight {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dark-light {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    
+  }
+
+  .dark-light i {
+    position: absolute;
+    color: var(--text-color);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .dark-light i.fa-sun {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .dark-light.active i.fa-sun {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .dark-light.active i.fa-moon {
+    opacity: 0;
+    pointer-events: none;
+  }
+/* ========== navbar ends here ========== */
+
+
+::-moz-scrollbar {
+  display: none; 
+}
+::-webkit-scrollbar{
+  display: none;
+  scrollbar-width: none;
+
+}
+.body{
+  background-color: var(--body-color);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.main-main{
+  width: 1100px;
+  margin: auto;
+  max-width: 90%;
+  /* padding-top: 90px; */
+  
+}
+
+.row{
+padding-top: 60px ;
+padding-bottom: 50px;
+
+}
+
+
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  overflow: scroll;
+  height: 613px;
+  display: block;
+}
+
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.post-img {
+  width: 100%;
+  height: 300px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin-bottom: 80px;
+  margin-top: 10px;
+  
+}
+
+.post-img img{
+  height: 350px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.card1,
+.card2{
+      background-color: var(--body-light);
+      padding: 10px 30px;
+      margin-top: 20px;
+      color: var(--text-color);
+}
+
+
+/* =============================================card1 content======================================== */
+
+
+.card1 p{
+  color: var(--text-color);
+}
+
+.card1 h4{
+  color: var(--text-color);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.card1 ul{
+  padding-left: 1rem;
+  list-style: disc;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card2 h2{
+  font-size: 20px;
+  margin-bottom: -20px;
+}
+
+
+.card2 h3{
+  padding-bottom: 10px;
+
+}
+
+.follow-card{
+      background-color: var(--body-light);
+      padding: 20px;
+      margin-top: 20px;
+      color: var(--text-color);
+}
+
+.follow-card h4{ 
+  font-size: 20px;
+}
+.follow-card .social-links a{
+  display: inline-block;
+	height: 40px;
+	width: 40px;
+  background-color:var(--text-color);
+
+	margin:20px 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: var(--body-light);
+	transition: all 0.5s ease;
+
+}
+
+.follow-card .social-links a i{
+  font-size: 20px;
+  padding-top: 10px;
+
+}
+
+.posts {
+  width: 100%;
+  padding: 5px;
+}
+
+.about-sec{
+  width: 100%;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================== footer starts here ================================== */
+footer{
+  display: block;
+}
+.container2{
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: var(--body-light);
+    padding: 20px 0;
+    
+}
+.footer-col{
+   width: 25%;
+   padding: 0 20px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: var(--text-color);
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color:var(--text-color);
+	height: 3px;
+	box-sizing: border-box;
+	width: 70px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: var(--text-color);
+	text-decoration: none;
+	font-weight: 300;
+	color: var(--text-color);
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: var(--hover-color);
+	padding-left: 8px;
+}
+.social-links i{
+  font-size: 20px;
+  padding-top: 10px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+  background-color:var(--text-color);
+
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: var(--body-light);
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #ffffff;
+  background-color: #3b5998;
+}
+
+/* =========================================================== footer starts here ================================== */

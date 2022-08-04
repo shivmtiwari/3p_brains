@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+     <!-- ===== BOX ICONS ===== -->
+     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="login__content">
+            <div class="login__img">
+                <img src="img-login.svg" alt="">
+            </div>
+
+
+
+
+            <div class="login__forms">
+                <form action="mail.php" method="POST" class="login__create none" id="login-up">
+                    <h1 class="login__title">Start Consulting</h1>
+
+                    <div class="login__box">
+                        <i class='bx bx-user login__icon'></i>
+                        <input type="text" name="name" id="name" placeholder="Username" class="login__input" required>
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bx-at login__icon'></i>
+                        <input type="text" name="email" id="email" placeholder="Email" class="login__input" required>
+                    </div>
+
+                    <div class="login__box">
+                        <i class='bx bxs-phone login__icon'></i>
+                        <input type="number" name="subject" id="subject" placeholder="Phone" class="login__input" required>
+                    </div>
+
+                    <input type="submit" value="Start Now" class="login__button">
+
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+<!-- <form action="mail.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+    <label for="subject">Number:</label>
+    <input type="number" name="subject" id="subject">
+    <input type="submit" value="Send">
+</form> -->

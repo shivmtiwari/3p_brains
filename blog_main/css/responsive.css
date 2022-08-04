@@ -1,0 +1,167 @@
+/******************************************* media querie for navbars *************************************/
+
+
+  @media (max-width: 1030px){
+    nav .nav-bar .nav-links li {
+        margin: 0;
+        padding: 0;
+        max-width: 100%;
+    }
+  }
+  
+  @media (max-width: 964px) {
+    nav .nav-bar .sidebarOpen {
+      display: block;
+    }
+    nav .nav-bar .nav-links li {
+        margin: 0;
+        padding: 0;
+    } 
+   .menu .nav-links{
+      margin-left: -30px;
+    }
+    .menu {
+      position: fixed;
+      height: 100%;
+      width: 280px;
+      left: -110%;
+      top: 0;
+      padding: 20px;
+      background-color: var(--nav-color);
+      z-index: 100;
+      transition: all 0.4s ease;
+      color: var(--text-color);
+    }
+  
+    nav.active .menu {
+      left: -0%;
+    }
+  
+    nav.active .nav-bar .navLogo a {
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+  
+    .menu .logo-toggle {
+      display: block;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .logo-toggle .siderbarClose {
+      color: var(--search-textr);
+      font-size: 24px;
+      cursor: pointer;
+     
+    }
+    .nav-bar .nav-links {
+      flex-direction: column;
+      padding-top: 30px;
+    }
+    .nav-links li a {
+      display: block;
+      /* margin-top: 20px; */
+      font-size: 15px;
+    }
+    .nav-bar .nav-links{
+     
+      padding-left: 0px;
+      
+    }
+    .dark-light{
+      margin-right: -30px;
+    }
+    .home-container{
+      flex-direction: column;
+      display: block;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .home-container .text{
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      display: block;
+  
+    }
+
+
+    .container1{
+        width: 90%;
+      }
+  }
+
+
+
+
+
+
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .post-img{
+    width: 230px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    padding-bottom: 3rem;
+
+  }
+
+  .post-img img{
+    width: 230px;
+    height: 200px;
+   
+    margin: auto;
+    
+
+  }
+
+}
+@media screen and (max-width:309px) {
+  .post-img{
+   left: -200px;
+
+  }
+
+  .post-img img{
+    left: -200px
+
+  }
+
+  
+}
+  
+
+
+
+
+
+
+
+
+
+
+/*===========================footer======================*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
